@@ -49,7 +49,7 @@ def jogar_adivinhacao():
             pontos_perdidos = abs(numero_secreto - chute)
             pontos = pontos - pontos_perdidos
 
-    print("Fim do jogo")
+    print("Fim do jogo !!!")
 
 if(__name__ == "__main__"):
     jogar_adivinhacao()
