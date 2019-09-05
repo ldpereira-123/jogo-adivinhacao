@@ -11,7 +11,7 @@ def jogar_adivinhacao():
     total_de_tentativas = 0
     pontos = 1000
 
-    print("Qual o nível de dificuldade?")
+    print("Qual o nível de dificuldade para este desafio ?")
     print("(1) Fácil (2) Médio (3) Difícil")
 
     nivel = int(input("Defina o nível: "))
@@ -31,7 +31,7 @@ def jogar_adivinhacao():
         chute = int(chute_str)
 
         if(chute < 1 or chute > 100):
-            print("Você deve digitar um número entre 1 e 100!")
+            print("Você deve digitar um número entre 1 e 100 !!")
             continue
 
         acertou = chute == numero_secreto
@@ -43,9 +43,9 @@ def jogar_adivinhacao():
             break
         else:
             if(maior):
-                print("Você errou! O seu chute foi maior do que o número secreto.")
+                print("Você errou! O seu chute foi maior do que o número secreto !!!")
             elif(menor):
-                print("Você errou! O seu chute foi menor do que o número secreto.")
+                print("Você errou! O seu chute foi menor do que o número secreto !!!")
             pontos_perdidos = abs(numero_secreto - chute)
             pontos = pontos - pontos_perdidos
 
